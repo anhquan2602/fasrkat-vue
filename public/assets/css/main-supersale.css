@@ -18,3 +18,8 @@
 .main-supersale{
     margin-top: 100px;
 }
+.main-supersale .main-supersale-banner:hover{
+    animation: flash  ease-in 1s;
+    cursor: pointer;
+
+}

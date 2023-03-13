@@ -26,8 +26,13 @@ box-sizing: border-box;
     outline: none;
     border: none;
     margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px dashed white;
+    background-color: rgba(153,105,31,0.5);
+    color: #ffffff;
 }
-.main-adv .banne h1{
+.main-adv .banner h1{
+    color: #ffffff;
     margin-top: -10px;
 }
 .main-adv{

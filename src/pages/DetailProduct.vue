@@ -2,6 +2,8 @@
 import BreadCrumb from './../components/common/BreadCrumb.vue';
 import DetailSiderbarimg from './../components/componentsDetail/DetailSiderbarimg.vue';
 import DetailBannerright from './../components/componentsDetail/DetailBannerright.vue';
+import DetailSider from './../components/componentsDetail/DetailSider.vue';
+import DetailBox from './../components/componentsDetail/DetailBox.vue';
 </script>
 
 <template>
@@ -11,18 +13,14 @@ import DetailBannerright from './../components/componentsDetail/DetailBannerrigh
                 <div class="cake d-flex">
                     <div class="sidebar-img mr5">
                         <DetailSiderbarimg v-for="index in 4" :key="index"></DetailSiderbarimg>
-
-
                     </div>
-
                     <div class="sider-img mr20">
-                        <img src="/assets/img/main-detail/5.jpg" alt="">
+                        <DetailSider></DetailSider>
                     </div>
                 </div>
                 <div class="des">
-                    <span class="mb20" style="border-radius: 5px;color: #ff4f4f;
-                                                                            ;   background: linear-gradient(90deg, rgba(255,114,114,0.15) 0%, rgba(255,114,114,0) 79%);
-                                                                            font-weight: 700;padding: 8px;">30% Off</span>
+                    <span class="mb20" style="border-radius: 5px;color: #ff4f4f;background: linear-gradient(90deg, rgba(255,114,114,0.15) 0%, rgba(255,114,114,0) 79%);                                                                               font-weight: 700;padding: 8px;">30%
+                        Off</span>
                     <h1 class="fw8 mb20 mt10">Creamy Chocolate Cake</h1>
                     <div class="price fz18 d-flex aic jcsb mt10 mb20">
                         <div class="price">
@@ -32,7 +30,6 @@ import DetailBannerright from './../components/componentsDetail/DetailBannerrigh
                                 style="font-weight: 400;margin-left: 6px;text-decoration: line-through;color: #4a5568;">28.56</span>
                             <h3 class="fz14 col-gr fw800" style="display: inline;">(8% Off)</h3>
                         </div>
-
                         <div class="check fz12  ">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -40,7 +37,6 @@ import DetailBannerright from './../components/componentsDetail/DetailBannerrigh
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star mr20"></span>
                             <span class="fz13 ">23 Customer Review</span>
-
                         </div>
                     </div>
                     <h3 class="lh-18 fw800 fz14 op08">
@@ -67,11 +63,7 @@ import DetailBannerright from './../components/componentsDetail/DetailBannerrigh
                         </div>
                         <div class="count-btn">
                             <button> Add to cart</button>
-
                         </div>
-
-
-
                     </div>
                     <div class="buy-box mb20">
                         <a href="">
@@ -108,7 +100,7 @@ import DetailBannerright from './../components/componentsDetail/DetailBannerrigh
             </div>
             <div class="main-right-detail">
                 <DetailBannerright v-for="index in 4" :key="index"></DetailBannerright>
-                
+
 
             </div>
         </div>
@@ -174,235 +166,10 @@ import DetailBannerright from './../components/componentsDetail/DetailBannerrigh
                 Related Products
             </h1>
             <div class="main-time d-flex aic jcsb w100 flex-wrap " style="margin: 0;">
+                <DetailBox v-for="index in 6" :key="index"></DetailBox>
 
-                <div class="box">
-                    <img src="/assets/img/main.time/2.png" alt="">
-                    <div class="product-option">
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <span style="font-weight:800;
-                
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Muffets & Tuffets Whole
-                        </span>
-                        <span style="font-weight: 800;
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Wheat Bread 400 g</span>
-                        <div class="price">
-                            <span style="font-weight: 600;margin-top: 10px;;color: #d99f46;">$26.69</span>
-                            <span style="font-weight: 400;
-                                                                        margin-left: 6px;
-                                                                        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));    text-decoration: line-through;
-                                                                        color: #4a5568;">28.56</span>
-                        </div>
 
-                        <div class="check" style="margin-top: 10px;font-size: 12px;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
 
-                        <button class="add">Add
-                            <i class="fa-solid fa-plus"></i>
-
-                        </button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/assets/img/main.time/1.png" alt="">
-                    <div class="product-option">
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <span style="font-weight:800;
-                
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Muffets & Tuffets Whole
-                        </span>
-                        <span style="font-weight: 800;
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Wheat Bread 400 g</span>
-                        <div class="price">
-                            <span style="font-weight: 600;margin-top: 10px;;color: #d99f46;">$26.69</span>
-                            <span style="font-weight: 400;
-                                                                        margin-left: 6px;
-                                                                        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));    text-decoration: line-through;
-                                                                        color: #4a5568;">28.56</span>
-                        </div>
-
-                        <div class="check" style="margin-top: 10px;font-size: 12px;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-
-                        <button class="add">Add
-                            <i class="fa-solid fa-plus"></i>
-
-                        </button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/assets/img/main.time/3.png" alt="">
-                    <div class="product-option">
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <span style="font-weight:800;
-                
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Muffets & Tuffets Whole
-                        </span>
-                        <span style="font-weight: 800;
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Wheat Bread 400 g</span>
-                        <div class="price">
-                            <span style="font-weight: 600;margin-top: 10px;;color: #d99f46;">$26.69</span>
-                            <span style="font-weight: 400;
-                                                                        margin-left: 6px;
-                                                                        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));    text-decoration: line-through;
-                                                                        color: #4a5568;">28.56</span>
-                        </div>
-
-                        <div class="check" style="margin-top: 10px;font-size: 12px;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-
-                        <button class="add">Add
-                            <i class="fa-solid fa-plus"></i>
-
-                        </button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/assets/img/main.time/4.png" alt="">
-                    <div class="product-option">
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <span style="font-weight:800;
-                
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Muffets & Tuffets Whole
-                        </span>
-                        <span style="font-weight: 800;
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Wheat Bread 400 g</span>
-                        <div class="price">
-                            <span style="font-weight: 600;margin-top: 10px;;color: #d99f46;">$26.69</span>
-                            <span style="font-weight: 400;
-                                                                        margin-left: 6px;
-                                                                        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));    text-decoration: line-through;
-                                                                        color: #4a5568;">28.56</span>
-                        </div>
-
-                        <div class="check" style="margin-top: 10px;font-size: 12px;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-
-                        <button class="add">Add
-                            <i class="fa-solid fa-plus"></i>
-
-                        </button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/assets/img/main.time/5.png" alt="">
-                    <div class="product-option">
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <span style="font-weight:800;
-                
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Muffets & Tuffets Whole
-                        </span>
-                        <span style="font-weight: 800;
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Wheat Bread 400 g</span>
-                        <div class="price">
-                            <span style="font-weight: 600;margin-top: 10px;;color: #d99f46;">$26.69</span>
-                            <span style="font-weight: 400;
-                                                                        margin-left: 6px;
-                                                                        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));    text-decoration: line-through;
-                                                                        color: #4a5568;">28.56</span>
-                        </div>
-
-                        <div class="check" style="margin-top: 10px;font-size: 12px;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-
-                        <button class="add">Add
-                            <i class="fa-solid fa-plus"></i>
-
-                        </button>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/assets/img/main.time/6.png" alt="">
-                    <div class="product-option">
-                        <i class="fa-regular fa-eye"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="content">
-                        <span style="font-weight:800;
-                
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Muffets & Tuffets Whole
-                        </span>
-                        <span style="font-weight: 800;
-                                                                        height: 20px;
-                                                                        font-size: 14px;">Wheat Bread 400 g</span>
-                        <div class="price">
-                            <span style="font-weight: 600;margin-top: 10px;;color: #d99f46;">$26.69</span>
-                            <span style="font-weight: 400;
-                                                                        margin-left: 6px;
-                                                                        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));    text-decoration: line-through;
-                                                                        color: #4a5568;">28.56</span>
-                        </div>
-
-                        <div class="check" style="margin-top: 10px;font-size: 12px;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-
-                        <button class="add">Add
-                            <i class="fa-solid fa-plus"></i>
-
-                        </button>
-                    </div>
-                </div>
             </div>
 
         </div>

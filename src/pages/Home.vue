@@ -258,13 +258,14 @@ var x = setInterval(function () {
                         <div class="describe">
                             <p
                                 style="font-size: 14px;
-                                                                    letter-spacing: 0.1px;color: #ffffff;font-weight: 700;font-family: bold;">
+                                                                        letter-spacing: 0.1px;color: #ffffff;font-weight: 700;font-family: bold;">
                                 Fresh
                                 &
                                 Delicious
                             </p>
                             <h2 style="font-size: calc(25px + (38 - 25) * ((100vw - 320px) / (1920 - 320)));font-weight: 700;line-height: 1;
-                                                                    text-transform: capitalize;color: #ffffff;">Fresh Bread
+                                                                        text-transform: capitalize;color: #ffffff;">Fresh
+                                Bread
                             </h2>
                             <p style="color: white;font-weight: 700;">Bento box burritos cherry bomb pepper dark and stormy
                                 with ginger..</p>
@@ -275,13 +276,13 @@ var x = setInterval(function () {
                         <img src="/assets/img/main-mean/Delicious_Cookies_For_Your_Morning_Brew.png" alt="">
                         <div class="describe">
                             <h6 style="    font-size: 14px;
-                                                                    letter-spacing: 0.1px;
-                                                                    color: #4a5568;">
+                                                                        letter-spacing: 0.1px;
+                                                                        color: #4a5568;">
                                 Exclusive offer
                                 <span
                                     style="border-radius: 50px;
-                                                                        color: #ff4f4f;    background: linear-gradient(90deg, rgba(255,114,114,0.15) 0%, rgba(255,114,114,0) 79%);    font-weight: 500;
-                                                padding: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320))) calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));">30%
+                                                                            color: #ff4f4f;    background: linear-gradient(90deg, rgba(255,114,114,0.15) 0%, rgba(255,114,114,0) 79%);    font-weight: 500;
+                                                    padding: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320))) calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));">30%
                                     Off</span>
                             </h6>
 
@@ -289,7 +290,7 @@ var x = setInterval(function () {
                                 style="line-height: calc(29px + (63 - 29) * ((100vw - 320px) / (1920 - 320)));opacity: 1.5;font-size: calc(25px + (42 - 25) * ((100vw - 320px) / (1920 - 320)));">
                                 WE'LL MAKE
                                 <span class="name" style="    font-weight: bold;
-                                                                        color: #d99f46;">HANDMADE</span>
+                                                                            color: #d99f46;">HANDMADE</span>
                                 <span> YOUR
                                 </span>
                                 <span> SWEET
@@ -299,14 +300,14 @@ var x = setInterval(function () {
 
                             <p
                                 style="color: #4a5568;
-                                                                    letter-spacing: 0.8px;
-                                                                    line-height: calc(19px + (27 - 19) * ((100vw - 320px) / (1920 - 320)));font-size: 14px;">
+                                                                        letter-spacing: 0.8px;
+                                                                        line-height: calc(19px + (27 - 19) * ((100vw - 320px) / (1920 - 320)));font-size: 14px;">
                                 Earl
                                 grey latte Thai basil curry grains alfalfa sprouts banana bread ginger...</p>
                             <button
                                 style="background: #d99f46;    padding: calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320))) calc(14px + (32 - 14) * ((100vw - 320px) / (1920 - 320)));
-                                                                    font-weight: 500;border: none;
-                                                font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));border-radius: 5px;">Shop
+                                                                        font-weight: 500;border: none;
+                                                    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));border-radius: 5px;">Shop
                                 Now</button>
                         </div>
 
@@ -316,22 +317,20 @@ var x = setInterval(function () {
                         <div class="describe">
                             <p
                                 style="font-size: 14px;
-                                                                    letter-spacing: 0.1px;color: #ffffff;font-weight: 700;font-family: bold;">
+                                                                        letter-spacing: 0.1px;color: #ffffff;font-weight: 700;font-family: bold;">
                                 Fresh
                                 &
                                 Delicious
                             </p>
-                            <h2 style="font-size: calc(25px + (38 - 25) * ((100vw - 320px) / (1920 - 320)));font-weight: 700;line-height: 1;
-                                                                    text-transform: capitalize;color: #ffffff;">Fresh Bread
+                            <h2 style="font-size: calc(25px + (38 - 25) * ((100vw - 320px) / (1920 - 320)));font-weight: 700;line-height: 1;                                                                        text-transform: capitalize;color: #ffffff;">Fresh
+                                Bread
                             </h2>
                             <p style="color: white;font-weight: 700;">Peanut butter crunch chia seeds red parsley basil
                                 overflowing..</p>
                             <p style="color: white;font-weight: 700;">Shop Now</p>
                         </div>
                     </div>
-
                 </div>
-
                 <MainAdv></MainAdv>
                 <div class="main-sale">
                     <MainSale v-for="index in 4" :key="index"></MainSale>
@@ -346,28 +345,17 @@ var x = setInterval(function () {
                                     style="   border: none; font-size: 14px; padding: 20px;  color: #fff;background-color:  #d99f46;padding: 8px;border-radius: 0 5px 5px 0;  ">
                                 </button>
                             </div>
-                            <MainContentBox v-for="index in 8" :key="index"></MainContentBox>
-
-
-                            <!-- 1 -->
-
-                            <!-- 1 -->
-
-                            <!-- 1 -->
+                            <MainContentBox></MainContentBox>
                         </div>
                         <div class="main-cream">
                             <h1>
                                 ALL KINDS OF CAKES
                             </h1>
-                            <MainCartCream v-for="index in 9" :key="index"></MainCartCream>
-
-
-
+                            <MainCartCream></MainCartCream>
                         </div>
                     </div>
                     <div class="main-right">
                         <MainContentRightBanner v-for="index in 3" :key="index"></MainContentRightBanner>
-
                         <!-- banner -->
                     </div>
 

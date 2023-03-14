@@ -166,7 +166,7 @@ import DetailBox from './../components/componentsDetail/DetailBox.vue';
                 Related Products
             </h1>
             <div class="main-time d-flex aic jcsb w100 flex-wrap " style="margin: 0;">
-                <DetailBox v-for="index in 6" :key="index"></DetailBox>
+                <DetailBox ></DetailBox>
 
 
 

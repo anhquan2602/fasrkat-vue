@@ -1,12 +1,39 @@
 
 
-<script setup>
+<script setup lang="ts">
+
+let items = [{
+    img: 1,
+    title: 'Muffets & Tuffets Whole Wheat Bread 400 g',
+    price: '$140',
+}, {
+    img: 8,
+    title: 'Peanut Butter Bite Premium Butter Cookies 600 g',
+    price: '$120',
+}, {
+    img: 3,
+    title: 'Yumitos Chilli Sprinkled Potato Chips 100 ',
+    price: '$150',
+}, {
+    img: 4,
+    title: 'Fresh Bread and Pastry Flour 200 ',
+    price: '$160',
+}, {
+    img: 5,
+    title: 'Fresh Bread and Pastry Flour 200 g',
+    price: '$180',
+}, {
+    img: 6,
+    title: 'SnackAmor Combo Pack of Jowar Stick and Jowar Chip',
+    price: '$180',
+}];
+ // thay các giá trị trong mảng này để lặp lại với các giá trị khác nhau cho img, h6 và span
 
 </script>
 
 <template>
-    <div class="box">
-        <img src="/assets/img/main.time/2.png" alt="">
+    <div class="box"  v-for="(item, index) in items" :key="index">
+        <img :src="`/assets/img/main.time/${item.img}.png`" alt="">
         <div class="product-option">
             <i class="fa-regular fa-eye"></i>
             <i class="fa-solid fa-code-compare"></i>
@@ -29,13 +56,7 @@
                                                                             color: #4a5568;">28.56</span>
             </div>
 
-            <div class="check" style="margin-top: 10px;font-size: 12px;">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-            </div>
+          
 
             <button class="add">Add
                 <i class="fa-solid fa-plus"></i>

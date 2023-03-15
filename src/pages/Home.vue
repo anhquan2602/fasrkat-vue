@@ -35,7 +35,9 @@ var x = setInterval(function () {
     }
 }, 1000);
 
+const listFood = {
 
+}
 
 </script>
 
@@ -43,7 +45,7 @@ var x = setInterval(function () {
     <div>
 
         <div class="main">
-            <div class="main-space session-box ">
+            <div class="main-space session-box " >
                 <div class="main-link">
                     <div class="dropdown">
                         <button class="dropbtn">
@@ -334,7 +336,7 @@ var x = setInterval(function () {
 
                 <MainAdv></MainAdv>
                 <div class="main-sale">
-                    <MainSale v-for="index in 4" :key="index"></MainSale>
+                    <MainSale ></MainSale>
                 </div>
                 <div class="main-content">
                     <div class="main-left mr10">
@@ -346,7 +348,7 @@ var x = setInterval(function () {
                                     style="   border: none; font-size: 14px; padding: 20px;  color: #fff;background-color:  #d99f46;padding: 8px;border-radius: 0 5px 5px 0;  ">
                                 </button>
                             </div>
-                            <MainContentBox v-for="index in 8" :key="index"></MainContentBox>
+                            <MainContentBox ></MainContentBox>
 
 
                             <!-- 1 -->
@@ -359,14 +361,14 @@ var x = setInterval(function () {
                             <h1>
                                 ALL KINDS OF CAKES
                             </h1>
-                            <MainCartCream v-for="index in 9" :key="index"></MainCartCream>
+                            <MainCartCream ></MainCartCream>
 
 
 
                         </div>
                     </div>
                     <div class="main-right">
-                        <MainContentRightBanner v-for="index in 3" :key="index"></MainContentRightBanner>
+                        <MainContentRightBanner></MainContentRightBanner>
 
                         <!-- banner -->
                     </div>

@@ -1,7 +1,13 @@
 
 
 <script setup>
-
+const good = [
+    {   id:1,
+        imageGood:"",
+        titleGood:"",
+        Price:"",
+    }
+]
 </script>
 
 <template>

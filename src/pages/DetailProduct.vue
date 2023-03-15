@@ -12,7 +12,7 @@ import DetailBox from './../components/componentsDetail/DetailBox.vue';
             <div class="main-left-detail main-small d-flex">
                 <div class="cake d-flex">
                     <div class="sidebar-img mr5">
-                        <DetailSiderbarimg v-for="index in 4" :key="index"></DetailSiderbarimg>
+                        <DetailSiderbarimg ></DetailSiderbarimg>
                     </div>
                     <div class="sider-img mr20">
                         <DetailSider></DetailSider>
@@ -99,7 +99,7 @@ import DetailBox from './../components/componentsDetail/DetailBox.vue';
                 </div>
             </div>
             <div class="main-right-detail">
-                <DetailBannerright v-for="index in 4" :key="index"></DetailBannerright>
+                <DetailBannerright ></DetailBannerright>
 
 
             </div>
@@ -166,7 +166,7 @@ import DetailBox from './../components/componentsDetail/DetailBox.vue';
                 Related Products
             </h1>
             <div class="main-time d-flex aic jcsb w100 flex-wrap " style="margin: 0;">
-                <DetailBox v-for="index in 6" :key="index"></DetailBox>
+                <DetailBox></DetailBox>
 
 
 
